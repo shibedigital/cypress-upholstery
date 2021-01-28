@@ -1,0 +1,47 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css";
+
+:root {
+  --bgcolor: #ffffff;
+}
+
+body {
+  background: var(--bgcolor);
+  position: relative;
+  max-width: 64em;  /* remove this for a full-width layout */
+  margin: 0 auto;  /* centers the layout */
+}
+
+@media (max-width: 768px) {
+  
+}
+
+section {
+  padding: calc(6em + 5vw) 5vw 8vw 5vw;
+  display: none;
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--bgcolor);
+}
+
+section:target { /* Show section */
+  display: block;
+}
+
+section#home { /* Show #home by default */
+  display: block;
+}
+
+/* ------- Header ------- */
+
+header {
+  padding: 5vw 5vw 0 5vw;
+  width: 100%;
+  z-index: 2;
+}
+
+header .logo {
+  width: 10rem;
+}
+
