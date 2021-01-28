@@ -6,17 +6,18 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Cypress Upholstery</title>
 	<link href="styles/style.css" rel="stylesheet" type="text/css" />
+  
 </head>
 
 <body class="bg-white">
 	<script src="script.js">
 
 	</script>
-	<header class="absolute flex flex-wrap font-semibold text-gray-500">
+
+	<header class="absolute flex flex-wrap justify-between font-semibold text-gray-500">
 		<a href="/">
-			<img class="logo" src="/assets/logo.svg" alt="Cypress Upholstery Ltd." />
+			<img class="logo w-40" src="/assets/logo.svg" alt="Cypress Upholstery Ltd." />
     </a>
-		<a class="phone absolute right-0 top-0 hover:text-gray-900" href="tel:604-251-7895">604-251-7895</a>
 		<nav class="hidden md:flex flex-col justify-end md:flex-row md:ml-40">
 			<a class="hover:text-gray-900 p-3" href="#about-us">About Us</a>
 			<a class="hover:text-gray-900 p-3" href="#services">Services</a>
@@ -24,19 +25,46 @@
 			<a class="hover:text-gray-900 p-3" href="#portfolio">Portfolio</a>
 			<a class="hover:text-gray-900 p-3" href="#contact-us">Contact Us</a>
 		</nav>
-    <a href="#menu" class="block md:hidden">Menu</a>
+    <a href="#menu" id="menu-link" class="md:hidden justify-end w-2.5 text-gray-500 hover:text-gray-900">
+      <svg viewBox="0 0 100 80" width="40" height="40" class="fill-current">
+        <rect width="100" height="11"></rect>
+        <rect y="30" width="100" height="11"></rect>
+        <rect y="60" width="100" height="11"></rect>
+      </svg>
+      <span>Menu</span>
+    </a>
+    <a class="phone absolute right-0 top-0 p-2 hover:text-gray-900" href="tel:604-251-7895">604-251-7895</a>
 	</header>
 	<main>
-		<section id="home">
-			<h1>Fine upholstery service since 1998</h1>
-      <p>Cypress Upholstery is the place to go for custom furniture upholstery in Vancouver.</p>
-      <button>Request a quote now</button>
+		<section id="home" class="px-0">
+      <article class="flex flex-col" style="background: url(/assets/green-chair.jpg) no-repeat; background-size: cover;">
+        <h1>Fine upholstery service since 1998</h1>
+        <p>Cypress Upholstery is the place to go for custom furniture upholstery in Vancouver.</p>
+        <button class="self-center h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800">Request a quote now</button>
+      </article>
 		</section>
 		<section id="about-us">
 			<p>Fine upholstery service since 1998</p>
 		</section>
 		<section id="services">
-			<p>Custom Reupholstering in Vancouver</p>
+      <article>
+			  <h1>Custom Reupholstering in Vancouver</h1>
+        <p>At Cypress Upholstery, we do a wide range of services ranging from building customized furniture for residential and commercial set-ups to custom reupholstering of antique furniture in Vancouver.</p>
+        <p>Our upholstery services include:</p>
+        <ul>
+          <li>Wall upholstery</li>
+          <li>Restyling and rebuilding</li>
+          <li>Antique refurbishing</li>
+          <li>Touch up of wood</li>
+          <li>Webbing added or replaced</li>
+          <li>New cushions (foam, down, springs)</li>
+          <li>Throw pillows</li>
+          <li>Arm caps</li>
+          <li>Chairs</li>
+          <li>Couches and sectionals</li>
+          <li>Restaurant benches</li>
+        </ul>
+      </article>
 		</section>
 		<section id="blog">
 			<p>Cypress Upholstery Blog</p>
@@ -47,12 +75,14 @@
 		<section id="contact-us">
 			<p>Contact Cypress Upholstery Today</p>
 		</section>
-    <section id="menu" class="flex flex-col justify-center text-center justify-between">
+    <section id="menu">
+      <nav class="flex flex-col flex-grow h-full justify-center text-center justify-between">
       <a class="rounded-3xl font-medium text-gray-500 hover:text-gray-900 p-3 hover:bg-gray-50" href="#about-us">About Us</a>
 			<a class="rounded-3xl font-medium text-gray-500 hover:text-gray-900 p-3 hover:bg-gray-50" href="#services">Services</a>
 			<a class="rounded-3xl font-medium text-gray-500 hover:text-gray-900 p-3 hover:bg-gray-50" href="#blog">Blog</a>
 			<a class="rounded-3xl font-medium text-gray-500 hover:text-gray-900 p-3 hover:bg-gray-50" href="#portfolio">Portfolio</a>
 			<a class="rounded-3xl font-medium text-gray-500 hover:text-gray-900 p-3 hover:bg-gray-50" href="#contact-us">Contact Us</a>
+      </nav>
     </section>
 
 	</main>

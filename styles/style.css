@@ -11,10 +11,6 @@ body {
   margin: 0 auto;  /* centers the layout */
 }
 
-@media (max-width: 768px) {
-  
-}
-
 section {
   padding: calc(6em + 5vw) 5vw 8vw 5vw;
   display: none;
@@ -33,15 +29,8 @@ section#home { /* Show #home by default */
   display: block;
 }
 
-/* ------- Header ------- */
-
 header {
   padding: 5vw 5vw 0 5vw;
   width: 100%;
   z-index: 2;
 }
-
-header .logo {
-  width: 10rem;
-}
-
