@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Cypress Upholstery</title>
 	<link href="styles/style.css" rel="stylesheet" type="text/css" />
-  
+
 </head>
 
 <body class="bg-white">
@@ -38,13 +38,96 @@
 	<main>
 		<section id="home" class="px-0">
       <article class="flex flex-col" style="background: url(/assets/green-chair.jpg) no-repeat; background-size: cover;">
-        <h1>Fine upholstery service since 1998</h1>
-        <p>Cypress Upholstery is the place to go for custom furniture upholstery in Vancouver.</p>
-        <button class="self-center h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800">Request a quote now</button>
+        <h1 class="text-6xl">Fine upholstery service since 1998</h1>
+        <p class="text-lg">Cypress Upholstery is the place to go for custom furniture upholstery in Vancouver.</p>
+        <button class="self-center h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-150 bg-gray-700 rounded-lg focus:shadow-outline hover:bg-gray-800">Request a quote now</button>
+      </article>
+      <article class="bg-white">
+        <h1 class="text-3xl">Cypress Upholstery: Your Source for Custom Furniture in Vancouver</h1>
+        <p>Cypress Upholstery is a family owned upholstery shop in Vancouver, British Columbia committed to customer service, quality and craftsmanship. We have over 35 years of experience in the industry.<br><br>We specialize in residential and commercial upholstery. We carry a wide range of fabrics in our showroom, in addition to foam and other materials such as springs and webbing.</p>
+        <img src="/assets/meichor-white-chair.jpg" alt="Vancouver Upholstery" />
+      </article>
+      <article>
+        <h1 class="text-3xl">Upholstery for Any Application</h1>
+        <img src="/assets/mahogany-chair.jpg" alt="leather chair" />
+        <p>Whether you need upholstery for your antique furniture, sofa couch, kitchen chairs or need custom furniture built, we offer a wide range of services. We work with you throughout the process—from choosing your fabric, firmness of your foam and other small but important details. Contact us today to see how we can bring your furniture back to life!</p>
+      </article>
+      <article id="endorsments" class="bg-white font-sans leading-normal tracking-normal">
+        <div class="carousel relative shadow-2xl bg-white">
+          <div class="carousel-inner relative overflow-hidden w-full">
+            <!--Slide 1-->
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+            <div class="carousel-item absolute opacity-0" style="height:40vh;">
+              <div class="block h-full w-full bg-black text-white text-5xl text-center">
+                <aside class="block w-80 mx-auto p-6 text-base rounded-md bg-gray-900">
+                  <div class="flex flex-wrap mx-1 overflow-hidden">
+                    <img class="block my-1 px-1 h-9 w-9 overflow-hidden" src="/assets/reviewer-alan-c.png" alt="avatar" />
+                    <div class="my-1 px-1 w-1/2 overflow-hidden"><span>Allen Chan</span></div>
+                    <div class="my-1 px-1 w-1/2 overflow-hidden text-gray-500"><span>Local Guide</span></div>
+                    <div class="my-1 px-1 w-1/2 overflow-hidden text-gray-500"><span>364 Reviews</span></div>
+                  </div>
+                  <div><span class="text-gray-500">⭐⭐⭐⭐⭐ 4 years ago</span></div>
+                  <div>
+                    <p>They fixed my Barcelona chair on time and on budget. Great little business</p>
+                  </div>
+
+                </aside>
+              </div>
+            </div>
+            <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+            <!--Slide 2-->
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0" style="height:40vh;">
+              <div class="block h-full w-full bg-black text-white text-5xl text-center">
+                <p>Great Little Business</p>
+                <p>They fixed my Barcelona chair on time and on budget. Great little business<br>Allen C.</p>
+              </div>
+            </div>
+            <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
+            <!--Slide 3-->
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0" style="height:40vh;">
+              <div class="block h-full w-full bg-black text-white text-5xl text-center">
+                <p>A fantastic local business! Cypress does a nice job. We have been using Cypress for several years now and are always happy with the results.<br>Anne-Marie K.</p>
+              </div>
+            </div>
+            <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-4" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+            <!--Slide 4-->
+            <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0" style="height:40vh;">
+              <div class="block h-full w-full bg-black text-white text-5xl text-center">
+                <p>Excellent work on my 3 piece living room set, reasonable price, and very pleasant to deal with.<br>Susan K.</p>
+              </div>
+            </div>
+            <label for="carousel-3" class="prev control-4 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-1" class="next control-4 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+
+            <!-- Add additional indicators for each slide-->
+            <ol class="carousel-indicators">
+              <li class="inline-block mr-3">
+                <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+              </li>
+              <li class="inline-block mr-3">
+                <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+              </li>
+              <li class="inline-block mr-3">
+                <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+              </li>
+              <li class="inline-block mr-3">
+                <label for="carousel-4" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+              </li>
+            </ol>
+            
+          </div>
+        </div>
       </article>
 		</section>
 		<section id="about-us">
-			<p>Fine upholstery service since 1998</p>
+			<p class="text-7xl">Fine upholstery service since 1998</p>
 		</section>
 		<section id="services">
       <article>
