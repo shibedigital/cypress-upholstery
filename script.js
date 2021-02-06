@@ -1,3 +1,13 @@
+/* Footer template */
+customElements.define('custom-footer', class extends HTMLElement {
+  constructor() {
+    super();
+    const template = document.getElementById('custom-footer-template').content;
+    const shadowRoot = this.attachShadow({ mode: 'open' }).appendChild(template.cloneNode(true));
+  }
+});
+
+
 /* Add a class to browsers with webp support */
 /*! modernizr 3.6.0 (Custom Build) | MIT *
  * https://modernizr.com/download/?-webp-setclasses !*/
