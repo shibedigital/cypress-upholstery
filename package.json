@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss-cli@latest build -o styles/compiled.css"
+    "build": "npx tailwindcss-cli@latest build -o compiled.css"
   },
   "repository": {
     "type": "git",
