@@ -7,6 +7,52 @@ customElements.define('custom-footer', class extends HTMLElement {
   }
 });
 
+/* Social Media Icons template */
+customElements.define('custom-social-media-icons', class extends HTMLElement {
+  constructor() {
+    super();
+    const template = document.getElementById('custom-social-media-icons-template').content;
+    const shadowRoot = this.attachShadow({ mode: 'open' }).appendChild(template.cloneNode(true));
+  }
+});
+
+/* Contact-us form submission */
+(() => {
+  const form = document.querySelector('form#contact');
+  const submitResponse = document.querySelector('#response');
+  const formURL = 'https://7jipoq1y97.execute-api.us-east-2.amazonaws.com/Prod/submitForm';
+
+  form.onsubmit = e => {
+    e.preventDefault();
+
+    // Capture the form data
+    let data = {};
+    Array.from(form).map(input => (data[input.id] = input.value));
+    console.log('Sending: ', JSON.stringify(data));
+    submitResponse.innerHTML = 'Sending...'
+
+    // Create the AJAX request
+    var xhr = new XMLHttpRequest();
+    xhr.open(form.method, formURL, true);
+    xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
+    xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
+    // Send the collected data as JSON
+    xhr.send(JSON.stringify(data));
+
+    xhr.onloadend = response => {
+      if (response.target.status === 200) {
+        form.reset();
+        submitResponse.innerHTML = 'Form submitted. Success!';
+      } else {
+        submitResponse.innerHTML = 'Error! Please try again.';
+        console.error(JSON.parse(response));
+      }
+    };    
+  };
+})();
+
+
 
 /* Add a class to browsers with webp support */
 /*! modernizr 3.6.0 (Custom Build) | MIT *
