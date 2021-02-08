@@ -1,0 +1,24 @@
+{
+  "name": "cypress-upholstery",
+  "version": "1.0.0",
+  "description": "This is the website for cypress upholstery. It is a simple, static website for now.",
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss-cli": "^0.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss-cli@latest build -o compiled.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shibedigital/cypress-upholstery.git"
+  },
+  "author": "",
+  "license": "Copyright 2021, Shibe Digital",
+  "bugs": {
+    "url": "https://github.com/shibedigital/cypress-upholstery/issues"
+  },
+  "homepage": "https://github.com/shibedigital/cypress-upholstery#readme"
+}
